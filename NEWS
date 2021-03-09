@@ -1,0 +1,5 @@
+Version 0.5
+-------
+change due to change in shinydashboardPlus 2.0:
+ - boxPlus changed to box with boxSidebar in all charts
+ - example program changed
