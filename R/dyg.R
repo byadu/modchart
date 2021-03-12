@@ -7,7 +7,7 @@
 #' @param session is shiny session variable
 #' @param g is the graph/chart to be charted
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import dygraphs
+#' @importFrom dygraphs dygraphOutput renderDygraph dygraph dyOptions dyRangeSelector
 #' @export
 dyg<- function(input, output, session, g, noopt=0) {
 	ns<- session$ns

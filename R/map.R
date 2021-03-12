@@ -8,8 +8,8 @@ mapobservers<- 0
 #' @param session is shiny session variable
 #' @param g is the graph/chart to be charted
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import rgdal
-#' @import sp
+#' @importFrom rgdal readOGR
+#' @importFrom sp merge
 #' @importFrom leaflet leaflet addProviderTiles addCircles colorBin colorNumeric addPolygons highlightOptions renderLeaflet leafletOutput
 #' @export
 map<- function(input, output, session, g, noopt=0) {

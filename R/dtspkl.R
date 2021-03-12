@@ -1,13 +1,13 @@
-grpby<- function(tbls, cols) {
-	dots <- lapply(cols, as.symbol)
-	group_by_(tbls, .dots=dots, add=TRUE)
-	}
-#' @import sparkline
+#' @importFrom sparkline spk_chr spk_add_deps
+#' @importFrom lazyeval interp
+#' @importFrom dplyr summarise group_by
+#' @importFrom htmlwidgets JS
+
 sparklines<- function(gfdim, nseries, dxy, xynam) {
 	dxy<- dxy[,1:3]
 	sdxy<- list()
 	for(i in 1:nseries) {
-		sdxy[[i]]<- dxy %>% grpby(xynam[1:(gfdim-1)]) %>% summarise_(interp(~sparkline::spk_chr(var, type=dtopts$sl), var=as.name(xynam[gfdim+i])))
+		sdxy[[i]]<- dxy %>% group_by(!!as.name(xynam[1:(gfdim-1)])) %>% summarise(spk_chr(!!as.name(xynam[gfdim+i]), type=dtopts$sl))
 		colnames(sdxy[[i]])<- c(xynam[1:(gfdim-1)], paste(xynam[gfdim+i], "by", xynam[gfdim]))
 		}
 	gfdim<- gfdim-1

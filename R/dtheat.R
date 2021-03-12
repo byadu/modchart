@@ -1,3 +1,4 @@
+#' @importFrom DT formatStyle styleInterval
 heatclrs<- function(brks) {
 	.<- NULL
 	if(dtopts$heatclr == 'Red')

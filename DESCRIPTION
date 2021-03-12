@@ -6,7 +6,7 @@ Author: Yadu Balehosur <yadu@vizualytics.com>
 Maintainer: Yadu Balehosur <yadu@vizualytics.com>
 Description: This is a 'shiny' module that encapsulates various charting options available in 'htmlwidgets', and provides options for each type of chart, a 'crosstalk' like interface for aggregate reports between 'DT' and other chart types.
 NeedsCompilation: no
-Imports: RColorBrewer, xts, dygraphs, highcharter, jsonlite, lazyeval, networkD3, leaflet, lubridate, dplyr, reshape2, rgdal, rpivotTable, shiny, shinyBS, shinyWidgets, shinydashboard, shinydashboardPlus, sp, sunburstR, tidyr, treemap, DT, sparkline, collapsibleTree, plotly
+Imports:  DT, RColorBrewer, collapsibleTree, dplyr, dygraphs, highcharter, jsonlite, lazyeval, leaflet, networkD3, plotly, rgdal, shiny, shinyBS, shinydashboard, shinydashboardPlus, sp, sparkline, sunburstR, treemap, htmlwidgets, magrittr
 Suggests: modgetxl
 Packaged: 2020-06-19 02:28:52 UTC; cubot
 RoxygenNote: 7.1.1

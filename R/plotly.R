@@ -21,7 +21,7 @@ popts<- reactiveValues(ptype=NULL, color='RoyalBlue', orientation='v', tickangle
 #' @param g is the graph/chart to be charted
 #' @param setdrill is the function to chart will call upstream to set a drill value on a chart
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import plotly
+#' @importFrom plotly plot_ly config layout event_register event_data renderPlotly plotlyOutput add_trace add_markers add_text
 #' @export
 plotly<- function(input, output, session, g, setdrill=NULL, noopt=0) {
 

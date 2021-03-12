@@ -7,6 +7,7 @@
 #' @param session is shiny session variable
 #' @param g is the graph/chart to be charted
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
+#' @importFrom shinydashboard valueBoxOutput renderValueBox valueBox
 #' @export
 vbox<- function(input, output, session, g, noopt=0) {
 	output$vbox<- renderValueBox({ 

@@ -10,7 +10,7 @@ dtopts<- reactiveValues(heat='none', heatclr="Red", sl='none')
 #' @param g is the graph/chart to be charted
 #' @param setdrill is the function to chart will call upstream to set a drill value on a chart
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import DT
+#' @importFrom DT dataTableOutput renderDataTable datatable 
 #' @export
 dtbl<- function(input, output, session, g, setdrill=NULL, noopt=0) {
 	ns<- session$ns

@@ -6,21 +6,14 @@ f<- reactiveValues(rows_selected=NULL)
 chartinit<- 1
 
 #' @rawNamespace import(shiny, except = c(renderDataTable, dataTableOutput))
-#' @import shinydashboard
-#' @import shinydashboardPlus
-#' @import shinyWidgets
-#' @import shinyBS
-#' @import rpivotTable
+#' @importFrom shinydashboardPlus box boxSidebar
+#' @importFrom shinyBS bsButton bsTooltip
 #' @import RColorBrewer
-# @import lubridate
-#' @import dplyr
-#' @import lazyeval
-#' @import reshape2
-#' @import tidyr
 #' @importFrom stats aggregate complete.cases quantile reshape
 #' @importFrom utils str
-#' @export
+#' @importFrom magrittr `%>%`
 
+#' @export
 #' @title chart
 #' @description A 'shiny' module to display many types of charts available as 'htmlwidgets' with a dataframe as input
 #' @details The graph structure containing chart type and chart data is passed as input. 

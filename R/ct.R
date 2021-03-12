@@ -9,7 +9,7 @@ ctopts<- reactiveValues(color=TRUE, size=TRUE)
 #' @param session is shiny session variable
 #' @param g is the graph/chart to be charted
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import collapsibleTree
+#' @importFrom collapsibleTree collapsibleTreeOutput renderCollapsibleTree collapsibleTreeSummary collapsibleTree
 #' @export
 ctree<- function(input, output, session, g, noopt=0) {
 	ns<- session$ns

@@ -9,7 +9,7 @@ topts<- reactiveValues(hctree=TRUE, pal='Set2')
 #' @param session is shiny session variable
 #' @param g is the graph/chart to be charted
 #' @param noopt is a toggle that tells chart module not to display options to change chart defaults
-#' @import treemap
+#' @importFrom treemap treemap
 #' @importFrom highcharter hctreemap renderHighchart highchartOutput hc_title
 #' @export
 tree<- function(input, output, session, g, noopt=0) {
