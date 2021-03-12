@@ -1,5 +1,4 @@
 #' @importFrom sparkline spk_chr spk_add_deps
-#' @importFrom lazyeval interp
 #' @importFrom dplyr summarise group_by
 #' @importFrom htmlwidgets JS
 
