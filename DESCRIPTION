@@ -1,6 +1,6 @@
 Package: modchart
 Title: A 'shiny' Module for Creating Charts of Various Types
-Version: 0.5
+Version: 0.6
 License: MIT + file LICENSE
 Author: Yadu Balehosur <yadu@vizualytics.com>
 Maintainer: Yadu Balehosur <yadu@vizualytics.com>
@@ -8,5 +8,6 @@ Description: This is a 'shiny' module that encapsulates various charting options
 NeedsCompilation: no
 Imports:  DT, RColorBrewer, collapsibleTree, dplyr, dygraphs, highcharter, jsonlite, lazyeval, leaflet, networkD3, plotly, rgdal, shiny, shinyBS, shinydashboard, shinydashboardPlus, sp, sparkline, sunburstR, treemap, htmlwidgets, magrittr
 Suggests: modgetxl
+URL: https://byadu.github.io/modchart/
 Packaged: 2020-06-19 02:28:52 UTC; cubot
 RoxygenNote: 7.1.1
